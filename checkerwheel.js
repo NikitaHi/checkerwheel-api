@@ -30,5 +30,3 @@ async function sendSteepCoin(recipientID, number) {
     };
     return await axios.post(CHECKER_WHEEL_URL + 'send_checkercoin', body, headers).then(res => res.data).catch(err => console.error(err));
 }
-
-console.log(getLastTransactions())
